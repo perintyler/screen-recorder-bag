@@ -1,0 +1,17 @@
+manifestVersion: 1
+name: screen-recorder
+description: Screen recording
+
+tools:
+  entry: tools.ts
+
+tool-metadata:
+  - { toolName: check_screen_recording_permissions, namespace: ffmpeg-screen-recorder, access: read }
+  - { toolName: start_screen_recording, namespace: ffmpeg-screen-recorder, access: write }
+  - { toolName: stop_screen_recording, namespace: ffmpeg-screen-recorder, access: write }
+  - { toolName: screen_recording_status, namespace: ffmpeg-screen-recorder, access: read }
+
+dependencies:
+  - name: ffmpeg
+    install: brew install ffmpeg
+    reason: captures the screen via avfoundation
