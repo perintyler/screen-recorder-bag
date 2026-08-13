@@ -1,4 +1,4 @@
-# Screen Recorder (Barry Pack)
+# Screen Recorder (Barry bag)
 
 Record the macOS screen using FFmpeg and AVFoundation.
 
